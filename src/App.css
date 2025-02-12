@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.sectionContainer {
+  width: 1280px;
+  place-items: center;
+}
+
+.infoContainer{
+  position: relative;
+  min-width: 90%;
+  min-height: fit-content;
+  border: solid 1px rgba(172, 172, 172, 0.87);
+  border-radius: 12px; 
+  padding: 15px 0;  
+}
+
+.formContainer{
+  display: flex;
+  padding-bottom: 20px;
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+  }
+  input {
+    height: 50px;
+    border-radius: 8px;
+    background-color: #fff;
+    outline: none;
+    padding: 0.1em 1em;
+    color: black;
+    font-size: 1em;
+  }
+
+  button{
+    color: rgb(238, 238, 238);
+    background-color: #9f91c5e3;
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.5em 1.2em;
+
+  }
+  button:hover {
+    background-color: #9f91c5bd;
+  }
+}
+
+/*container prediccion por horas*/
+.hourlyForecast{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.hourItem{
+  border: solid 1px rgba(172, 172, 172, 0.87);
+  border-radius: 8px;
+  padding: 0px 15px;
+}
+
